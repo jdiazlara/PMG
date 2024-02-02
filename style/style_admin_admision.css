@@ -1,0 +1,95 @@
+.title-main-active{
+    margin-top: 80px !important;
+}
+
+.all .title-header{
+    margin-block:30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.all .title-header h1{
+    color: rgb(43, 43, 43);
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:80px;
+    
+}
+
+table{
+    width: 40% !important;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.thead{
+    background-color: rgba(0, 132, 255, 0.452);
+}
+
+th{
+    padding-inline: 5px;
+    padding-block: 5px;
+    box-sizing: border-box;
+    color: black;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+td{
+    border-bottom: 1px solid black;  
+    border-right: 1px solid black;
+    padding-block: 3px;
+    padding-inline:5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+}
+
+#email{
+    text-align: left !important;
+}
+
+#id{
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.no_session{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: rgb(37, 37, 37);
+    margin-top: 60px;
+
+}
+
+#init_session{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no_access{
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: rgb(37, 37, 37);
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

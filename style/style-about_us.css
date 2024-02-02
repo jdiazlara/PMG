@@ -1,0 +1,308 @@
+.main-page{
+    padding: 20px 50px;
+}
+
+.title-main-active{
+    margin-top: 80px;
+}
+
+.title-header h1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #023877;
+    width: 100%;
+    font-size: 28px;
+}
+
+.title-header{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.title-header-maximo_gomez{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 90px;
+}
+
+.line{
+    height: 5px;
+    background-color: #249cf2;
+    width: calc(100% - 25%);
+    border-radius: 4px;
+}
+
+.contents-history{
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Poppins';
+}
+
+.contents-history img{
+    width: 600px;
+    border-radius: 5px;
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+.contents-maximo_gomez{
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Poppins';
+}
+
+.maximo_gomez-pmg, .history-pmg, .objectives, .container-all-values{
+    opacity: 1;
+}
+
+.maximo_gomez-pmg-active, .history-pmg-active, .objectives-active, .container-all-values-active{
+    transition: all 1600ms;
+    opacity: 1;
+}
+
+.contents-maximo_gomez img{
+    width: 300px;
+    border-radius: 5px;
+    float: right;
+    margin: 0px 60px;
+}
+
+.title-header-objectives-internationales{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 90px 0px 50px;
+}
+
+.title-header-objectives-internationales h1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #023877;
+    width: 100%;
+    font-size: 28px;
+}
+
+.title-header-objectives-internationales .line{
+    height: 5px;
+    background-color: #249cf2;
+    width: calc(100% - 25%);
+    border-radius: 4px;
+}
+
+.box-objectives{
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: row wrap;
+}
+
+.box-text{
+    margin: 10px;
+    padding: 30px;
+    text-align:justify;
+    font-family: "Poppins";
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 600px;
+    background-color: #023877;
+    border-radius: 10px;
+    color: white;
+}
+
+.box-text h1{
+    text-align: center;
+    margin: 10px 0px 20px;
+    font-size: 26px;
+    -webkit-box-reflect: below -20px linear-gradient(transparent 30%, rgba(255, 255, 255, 0.473));
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+.objectives-international{
+    padding: 10px 30px 30px 30px
+}
+
+#box-text__h1{
+    text-align: center;
+    margin: 0px 0px 10px;
+    font-size: 26px;
+    -webkit-box-reflect: below -20px linear-gradient(transparent 65%, rgba(255, 255, 255, 0.473));
+}
+
+.container-all-values{
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.values ul{
+    width: 25vw;
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+.specific-objectives ul li{
+    margin-block: 10px;
+}
+
+.specific-objectives ul{
+    width: 50vw;
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+.material-symbols-outlined {
+    color: #023877;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+  
+}
+
+@media (max-width:1024px){
+    .contents-history img{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:425px){
+
+    .title-header h1{
+        font-family: 'Poppins';
+        font-weight: 700;
+        color: #023877;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .contents-history img{
+        width: 200px !important;
+        border-radius: 2px;
+        float: left;
+        margin: 0px 15px 0px 0px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+    
+    .contents-maximo_gomez img{
+        width: 150px;
+        margin: 0px 10px;
+    }
+
+    .box-text h1{
+        font-size: 18px;
+        margin: 5px 0px 20px;
+        -webkit-box-reflect: below -10px linear-gradient(transparent 30%, rgba(255, 255, 255, 0.473));
+        
+    }
+
+    .box-text{
+        width: 200px;
+        height: max-content;
+        padding: 15px;
+    }
+
+    #box-text__h1{
+        text-align: center;
+        margin: 0px 0px 10px;
+        font-size: 18px;
+        -webkit-box-reflect: below -10px linear-gradient(transparent 65%, rgba(255, 255, 255, 0.473));
+    }
+
+    .title-header-objectives-internationales h1{
+        font-family: 'Poppins';
+        font-weight: 700;
+        color: #023877;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .title-header h1{
+        font-size: 20px;
+    }
+
+    .main-page{
+        padding: 20px 20px;
+    }
+
+    .values div.title-header-main{
+        margin: 10px 0px 20px;
+    }
+
+    .container-all-values{
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .values  ul li{
+        font-size: 10px;
+        line-height: 2;
+        width: 100%;
+    }
+
+    .specific-objectives {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+    
+    .specific-objectives ul li{
+        font-size: 10px;
+    }
+
+
+}
+
+@media (max-width:320px){
+    .title-header h1{
+        font-size: 16px;
+    }
+    .title-header-objectives-internationales div h1{
+        font-size: 14px;
+    }
+
+    .box-text h1{
+        font-size: 14px;
+        margin: 5px 0px 20px;
+        -webkit-box-reflect: below -10px linear-gradient(transparent 30%, rgba(255, 255, 255, 0.473));
+        
+    }
+
+    .contents-maximo_gomez img{
+        width: 100px;
+        margin: 0px 10px;
+    }
+
+    .contents-history img{
+        width: 150px;
+        margin-bottom: 5px;
+    }
+
+    #box-text__h1{
+        text-align: center;
+        margin: 0px 0px 10px;
+        font-size: 14px;
+        -webkit-box-reflect: below -10px linear-gradient(transparent 65%, rgba(255, 255, 255, 0.473));
+    }
+
+    .values ul li{
+        width: 150%;
+    }
+
+    .specific-objectives ul li{
+        width: 150%;
+        position: relative;
+        left: -40px;
+    }
+}

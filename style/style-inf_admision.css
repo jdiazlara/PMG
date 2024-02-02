@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 50px 40px;
+}
+
+main div.container-main div.title-main-active {
+    margin-top: 50px;
+}
+
+main div h1 {
+    font-size: 28px;
+    color: #023877;
+    font-family: "Poppins";
+}
+
+main div div.title-header {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+main div div.title-header div.line {
+    height: 5px;
+    background-color: #249cf2;
+    width: calc(100% - 25%);
+    border-radius: 4px;
+}
+
+main div p,
+main div ul li,
+main div h2,
+main div h3 {
+    font-family: "Poppins";
+    color: rgb(43, 43, 43);
+}
+
+main div p,
+main div h3 {
+    margin-bottom: 15px;
+}
+
+
+main div h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+main div h3 {
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    font-weight: 300;
+}
+
+.container-main ul {
+    margin-bottom: 15px;
+}
+
+main div div.btn-ancher_form {
+    padding: 10px 20px;
+    margin-top: 50px;
+    width: 400px;
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #023877;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main div div.btn-ancher_form h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#link{
+    color: blue;
+    text-decoration: underline;
+    
+}
+
+.note p{
+    margin-bottom: 0px;
+}
+
+@media (max-width:425px) {
+
+    .title-header h1 {
+        font-size: 18px;
+    }
+
+    li,
+    p {
+        font-size: 12px;
+    }
+
+    .calendar-admission h2 {
+        font-size: 14px;
+
+    }
+
+    .calendar-admission h3 {
+        font-size: 12px;
+    }
+
+    main div div.btn-ancher_form {
+        padding: 10px 20px;
+        margin-top: 50px;
+        width: 70%;
+        height: 40px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #023877;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    main div div.btn-ancher_form h1{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+}
+
+@media (max-width:375px){
+    main div div.btn-ancher_form {
+        padding: 5px 10px;
+        margin-top: 50px;
+        width: 80%;
+        height: 40px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #023877;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:320px) {
+    main div div.btn-ancher_form h1 {
+        font-size: 14px;
+    }
+}

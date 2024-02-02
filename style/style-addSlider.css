@@ -1,0 +1,273 @@
+body{
+    overflow-x: hidden;
+}
+
+.welcome{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    opacity: 1;
+    transition: all 400ms;
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+	animation: scale-up-center 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  
+
+.welcome img{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.welcome h1{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.ctnAddSlider {
+    display: flex;
+    flex-direction: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.ctnAddSlider h1{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    width: 60%;
+}
+
+.col-right{
+    width: 50%;
+    margin-left: 10%;
+}
+.col-left{
+    width: 50%;
+}
+
+.addTitle h1, .addImage h1{
+    font-weight: 600;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 100px;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    color: rgb(34, 34, 34);
+    outline: none;
+    border: 2px solid rgb(109, 109, 109);
+}
+
+input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: 2px solid rgb(109, 109, 109);
+    border-radius: 5px;
+    padding-inline: 5px;
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+}
+
+
+#vista-previa img{
+    height: 33vh;
+    width: 100%;
+    
+}
+
+#vista-previa-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#vista-previa-brand img{
+    width: auto;
+    height: 100px;
+}
+
+button{
+    font-size: 20px;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #034b9e;
+    margin-top: 60px;
+    border: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#btn{
+    font-size: 20px;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: transparent;
+    border-radius: 5px;
+    background-color: #034b9e;
+    margin-top: 40px;
+    position: relative;
+    left: 0%;
+}
+
+
+
+.editSlides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+}
+
+table{
+    width: 95%;
+}
+
+thead{
+    background-color: rgb(17, 97, 216);
+    border-radius: 5px;
+    height: 30px;
+}
+
+th{
+    border-radius: 3px;
+    padding-inline:10px;
+    box-sizing: border-box;
+}
+
+td{
+    border-bottom: 3px solid rgb(117, 117, 117);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+#ID{
+    max-width: 45px;
+    text-align: center;
+    font-weight: 700;    
+    font-size: 18px;
+}
+
+#tittle{
+    max-width: 350px;
+}
+
+#subtittle{
+    max-width: 500px;
+    width: 500px;
+    overflow-wrap: break-word;
+}
+
+#url{
+    max-width: 200px;
+    overflow-x: scroll;
+}
+
+#img{
+    max-width: 150px !important;
+    overflow: hidden;
+}
+
+#img img{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#img_brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img_brand img{
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
+}
+
+#actions{
+    max-width: 100px !important;
+
+}
+
+#actions a{
+    text-decoration: none !important;
+}
+
+#Delete{
+    border-radius: 5px;
+    width: 35px;
+    margin: auto;
+    cursor: pointer;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(209, 37, 37);
+    color: white;
+}
+
+#area-arrastrar {
+    width: 400px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    line-height: 300px;
+    font-size: 20px;
+    background-color: #1E1E1E;
+}
+
+    

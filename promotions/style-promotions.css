@@ -1,0 +1,148 @@
+.container-main{
+    overflow: hidden;
+}
+
+.title-main-active{
+    margin-top: 50px;
+}
+
+.img-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.img-logo img{
+    width: 50%;
+}
+
+.container-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block:20px;
+    flex-flow: column wrap;
+}
+
+.container-title h1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #023877;
+
+}
+
+.line{
+    height: 5px;
+    background-color: #249cf2;
+    width: calc(100% - 25%);
+    border-radius: 4px;
+}
+
+
+.container-main{
+    display: flex;
+    flex-flow: column;
+
+}
+
+.everyone img{
+    width: 100%;
+}
+
+.pictures{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+
+.pictures div{
+    display: flex;
+    width: 30%;
+}
+
+.pictures div img{
+    width: 100%;
+}
+
+.left{
+    position: relative;
+
+    left: 0px;
+}
+
+.mid{
+    position: relative;
+    top: 150px;
+}
+
+.right{
+    position: relative;
+    top: 300px;
+}
+
+.individual-photos{
+    margin-top:350px;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: center;
+    gap: 20px;
+}
+
+.individual-photos div{
+    display: flex;
+    width: 30%;
+}
+
+.individual-photos div img{
+    width: 100%;    
+    border-radius: 5px;
+}
+
+.midd{
+    position: relative;
+    top: 150px;
+}
+
+@media (max-width:425px){
+    .pictures{
+        gap: 5px;
+    }
+
+    .pictures div{
+        display: flex;
+        width: 30%;
+    }
+    
+    .pictures div img{
+        width: 100%;
+    }
+
+    .left{
+        position: relative;
+        left: 0px;
+    }
+    
+    .mid{
+        position: relative;
+        top: 50px;
+    }
+    
+    .right{
+        position: relative;
+        top: 100px;
+    }
+
+    .individual-photos{
+        margin-top:100px;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+}

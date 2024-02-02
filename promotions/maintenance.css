@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 50px;
+    color: rgb(39, 39, 39);
+}
+
+
+@media (max-width:425px){
+    main h1{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+

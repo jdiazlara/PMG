@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Mantemiento*/
+
+.all{
+    margin: 20px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.no-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-content h1{
+    font-family: "Poppins";
+    color: rgb(48, 48, 48);
+    font-size: 50px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+
+@media (max-width:425px) {
+    .no-content h1{
+        font-size: 30px;
+    }
+
+
+}
+
+/*Mantemiento*/
+
+div.title-header{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+div.title-header h1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #023877;
+}
+div.header-title-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+div.title-header div.line{
+    height: 5px;
+    background-color: #249cf2;
+    width: calc(100% - 25%);
+    border-radius: 4px;
+}
+
+.container-EG{
+    display: flex;
+}
+
+.card{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient( #1e3c72, #2a5298, #312d7c);
+    margin-top: 50px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card img{
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    transform: translateX(-50%);
+    height: 300px;
+}
+
+.card .contenido-EG{
+    position: relative;
+    width: 50%;
+    padding: 5px 5px 5px 15px;
+}
+
+.card .contenido-EG h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.card .contenido-EG p{
+    color: #fff;
+    font-weight: 1006;
+}
+
+main div.container-main div.title-main-active{
+    margin-top: 70px;
+}

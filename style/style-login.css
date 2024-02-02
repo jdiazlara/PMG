@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.container-session{
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";
+    flex-flow: column nowrap;  
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap column;
+}
+
+.card-header{
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 28px;
+    color: rgb(34, 34, 34);
+}
+
+.profile img{
+    width: 100px;
+    height: 100px !important;
+    border-radius: 60%;
+    margin-top: 40px;
+    
+}
+
+.profile h3{
+    font-size: 18px;
+    color: rgb(24, 24, 24);
+    font-weight: 600;
+}
+
+#logout{
+    color: rgb(5, 39, 133);
+    text-decoration: underline;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    top: 30px;
+}
+
+.btn-login{
+    position: relative;
+    top: 50px;
+}
+
+.g-signin2 {
+    background-color: #fff;
+    color: #757575;
+    border-radius: 4px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    height: 36px;
+    width: 120px;
+  }
+
+
+
+@media (max-width:425px){
+    .container-session{
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .profile img{
+        width: 70px;
+        height: 70px !important;
+        border-radius: 60%;
+        margin-top: 40px;
+        
+    }
+
+    .profile h3{
+        font-size: 14px;
+        color: rgb(24, 24, 24);
+        font-weight: 600;
+    }
+
+    #logout{
+        color: rgb(5, 39, 133);
+        text-decoration: underline;
+        position: relative;
+        top: 15px;
+    }
+
+    .card-header{
+        text-align: center;
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 24px;
+        color: rgb(34, 34, 34);
+    }
+
+    .container-short_menu{
+        background-color: #072d5c;
+        position:absolute;
+        right: 0px;
+        top: 140px;
+        height: 100%;
+        width: 250px;
+        z-index: 50;
+        color: black;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+}
+
+@media (max-width:320px){
+    .container-session{
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}

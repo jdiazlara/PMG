@@ -1,0 +1,134 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.containerCenter{
+    width: 60%;
+}
+
+.containerCenter__title{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-size: 20px;
+}
+
+.containerCenter__title h1{
+    font-size: 34px;
+}
+
+.policiesRow{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-flow: column nowrap;
+    padding-inline: 40px;
+}
+
+.policiesRow__text{
+    margin-block:50px;
+}
+
+.policiesRow__text h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.policiesRow__text h4{
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.policiesRow__text ul li{
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 40px;
+}
+
+.policiesRow__text ul{
+    margin-top: 10px;
+}
+
+@media (max-width:425px){
+    .containerCenter{
+        width: 90%;
+    }
+    
+    .containerCenter__title{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .containerCenter__title h1{
+        font-size: 24px;
+    }
+    
+    .policiesRow{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-flow: column nowrap;
+        padding-inline: 20px;
+    }
+    
+    .policiesRow__text{
+        margin-block:50px;
+    }
+    
+    .policiesRow__text h1{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .policiesRow__text h4{
+        font-size: 14px;
+        font-weight: 300;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    
+    .policiesRow__text ul li{
+        font-size: 14px;
+        font-weight: 300;
+        padding-block: 5px;
+        margin-left: 40px;
+    }
+    
+    .policiesRow__text ul{
+        margin-top: 10px;
+    }
+}
+
+
+@media(max-width:320px){
+        
+    .containerCenter__title{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .containerCenter__title h1{
+        font-size: 20px;
+    }
+
+    .policiesRow{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-flow: column nowrap;
+        padding-inline: 0px !important;
+    }
+}

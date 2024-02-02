@@ -1,0 +1,347 @@
+*{
+    font-family: "Poppins";
+}
+
+footer{
+    width: 100% !important;
+}
+
+.top-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px;
+    font-family: "Poppins";
+    color: #023877;
+
+}
+
+.top-footer img{
+    width: 200px;
+    height: 200px;
+}
+
+.address-pmg{
+    padding-inline: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-pmg h3{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.title-pmg h1{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-pmg{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-pmg div h3{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.social-media-pmg div h4{
+    display: none;
+}
+
+.contacts-pmg div.container-contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    
+}
+
+.top-footer div span{
+    margin: 0px 10px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-footer div span img{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.bottom-footer{
+    background-color: #023877;
+    color: white;
+    font-family: "Poppins";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.social-media-pmg{
+    margin: 40px 40px 0px 40px;
+    display:flex;
+    justify-content: left;
+    align-items:flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-inline: 10px;
+}
+
+.social-media-pmg div{
+    display: flex;
+    margin-block: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-pmg div h3{
+    font-size: 16px;
+}
+
+.bottom-footer h1{
+    font-size: 28px;
+}
+
+.social-media-pmg a{
+    display: inline;
+    font-weight: 300;
+    margin-left: 10px;
+    color: white;
+}
+
+.link_privacy_policies{
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+
+.founders-page{
+    margin: 40px 40px 0px 40px;
+    display:flex;
+    flex-direction: column;
+}
+
+.title-founders h1{
+    text-align: center;
+}
+
+.second-title-founders h1{
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.founders-page div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.founders-page div img{
+    cursor: pointer;
+}
+
+.founders-page h3{
+    display: inline;
+    width: calc(60% + 5%);
+    line-height: 2;
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.founders-page a{
+    color: rgb(11, 188, 241);
+    text-decoration:underline;
+}
+
+.copyright{
+    background-color: #003066;
+    color: white;
+    font-family: "Poppins";
+    font-size: 8px;
+}
+
+.copyright h1{
+    font-weight: 300;
+    line-height: 3;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .social-media-pmg{
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px){
+
+    .top-footer div span{
+        font-size: 18px;
+    }
+    
+    .top-footer h1{
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+        
+    }
+
+    .title-pmg{
+        margin-top: 15px;
+    }
+
+    .social-media-pmg div h4{
+        display:inline-block;
+        margin-left: 10px;
+        font-weight: 300;
+    }
+
+    .address-pmg h3{
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .contacts-pmg div h3{
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .top-footer div span{
+        margin: 0px 5px 0px 20px;
+    }
+
+    .top-footer div span img{
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .title-bottom h1{
+        font-size: 22px;
+    }
+
+    #logo-link img, .founders-page a img{
+        width: 20px;
+        height: 20px;
+    }
+
+    #text-link{
+        font-size: 12px;
+    }
+
+    .title-founders h1{
+        font-size: 22px;
+    }
+
+    .second-title-founders h1{
+        font-size: 12px;
+    }
+
+    .founders-page h3{
+        font-size: 12px;
+    }
+
+    .copyright h1{
+        font-size:9px;
+    }
+
+    .founders-page a[href="../php/collaborators.php"]{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:450px){
+
+    .top-footer img{
+        width: 90px;
+        height: 90px;
+    }
+
+}
+
+@media (max-width:375px){
+
+    .top-footer div span{
+        font-size: 15px;
+        
+    }
+
+    .copyright{
+        padding-inline: 10px;
+    }
+
+    .copyright h1{
+        line-height: 2;
+        font-size: 10px;
+    }
+
+    .founders-page h3{
+        display: inline;
+        width: calc(60% + 5%);
+        line-height: 2;
+        font-weight: 300;
+        font-size: 16px;
+        margin-left: 10px;
+        text-align: center;
+    }   
+
+    .title-pmg h1{
+        font-size: 26px;
+    }
+
+    .address-pmg h3{
+        font-size: 10px;
+    }
+    
+    .container-contacts h3{
+        font-size: 10px;
+    }
+
+    .title-bottom h1{
+        font-size: 22px;
+    }
+
+    .social-media-pmg div h4{
+        font-size: 14px;
+    }
+
+    .title-founders h1{
+        font-size: 22px;
+    }
+
+    .second-title-founders h1{
+        font-size: 12px;
+    }
+
+    .founders-page h3{
+        font-size: 12px;
+    }
+
+    .founders-page a{
+        color: rgb(11, 188, 241);
+        text-decoration:underline;
+        font-size: 12px;
+    }
+}

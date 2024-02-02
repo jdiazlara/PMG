@@ -1,0 +1,117 @@
+.title-main-active{
+    margin-top: 80px !important;
+}
+
+
+.welcome{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    opacity: 1;
+    transition: all 400ms;
+}
+
+.welcome.active{
+    opacity: 1;
+    transition: all 400ms;
+    background-color: red;
+}
+
+.welcome img{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.welcome h1{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+.all .title-header{
+    margin-block:30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.all .title-header h1{
+    color: rgb(43, 43, 43);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:80px;
+    flex-flow: column nowrap;
+}
+
+
+table{
+    width: 70%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.thead{
+    background-color: rgba(0, 132, 255, 0.452);
+}
+
+th{
+    padding: 5px;
+    color: black;
+    border-radius: 2px;
+}
+
+
+td{
+    border-bottom: 1px solid black;  
+    border-right: 1px solid black;
+    padding-block: 5px;
+    padding-inline:10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#email{
+    text-align: left !important;
+}
+
+#id{
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.no_session{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: rgb(37, 37, 37);
+    margin-top: 60px;
+
+}
+
+.no_access{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: rgb(37, 37, 37);
+    margin-top: 60px;
+
+}
+
+#not_data{
+    color: rgb(199, 28, 28);
+    font-weight: 600;
+    font-size: 22px;
+}

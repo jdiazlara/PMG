@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.container-main{
+    padding: 20px;
+}
+
+.main-page, .collaborators{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;;
+}
+
+.title-collab{
+    padding-bottom: 30px;
+}
+
+.title-collab h1{
+    text-align: center;
+}
+
+.title-header h1{
+    font-size: 28px;
+    color:#023877;
+    font-family: "Poppins";
+}
+
+.title-header-main{
+    display:inline-block;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    margin: 0px auto;
+}
+
+div.title-header div.line{
+    height: 5px;
+    background-color: #249cf2;
+    width: calc(100% - 25%);
+    border-radius: 4px;
+}
+
+.id-project{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    color: rgb(34, 34, 34) !important;
+    margin-top: 10px;
+}
+
+.id-creators{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    color: rgb(34, 34, 34) !important;
+    margin-top: 40px;
+}
+
+.name-creador{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.name-creador h1{
+    font-size: 22px;
+}
+
+.name-creador h5, .id-collab ul li h5{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.rol{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.rol h3{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.id-collab{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.id-collab ul li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(34, 34, 34) !important;
+}
+
+
+
+.id-collab ul li h5{
+    margin-bottom: 10px;
+}
+
+.id-collab ul li ul li a{
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width:425px){
+    .title-header h1{
+        font-size: 20px;
+    }
+
+    .name-creador h1{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:375px){
+    .title-header h1{
+        font-size: 18px;
+        color:#023877;
+        font-family: "Poppins";
+    }
+}
+
+@media (max-width:320px){
+    .title-header h1{
+        font-size: 16px;
+    }
+    
+    .name-creador h1,.id-collab ul li h4{
+        font-size: 14px;
+        color: rgb(34, 34, 34) !important;
+    }
+
+    .name-creador{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .id-creators{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        color: rgb(34, 34, 34) !important;
+        margin-top: 10px;
+    }
+}
