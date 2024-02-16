@@ -1,7 +1,7 @@
 <?php
     $host = "localhost";
     $user = "root";
-    $password = "";
+    $password = "123456";
     $database = "db_pmg";
     
     $connection = mysqli_connect($host, $user, $password, $database);
