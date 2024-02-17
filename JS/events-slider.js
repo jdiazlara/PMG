@@ -42,10 +42,12 @@ if (slider.children.length !== 0) {
   const sliderButtons = document.querySelector('.slider-buttons');
   const noticias__link = document.querySelector('.noticias__link');
   const events = document.querySelector('.events')
+  const content__container = document.querySelector('.content__container')
 
   sliderButtons.style.display = 'none'
   noticias__link.style.display = 'none'
   events.style.display = 'none'
+  content__container.style.display = 'none'
 }
 
 
