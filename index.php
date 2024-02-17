@@ -1,6 +1,6 @@
 <?php
 include('./php/connection.php'); //Importa la conexion de la base de datos
-$query = "SELECT * FROM noticias";
+$query = "SELECT * FROM noticias order by fecha desc limit 6";
 $resultado = mysqli_query($connection, $query);
 session_start(); //Inicia o Reanuda una sesion
 error_reporting(0); //Poner (0) para eliminar los reportes de errores. Eliminar el 0 para aparecer los errores.
@@ -411,27 +411,27 @@ error_reporting(0); //Poner (0) para eliminar los reportes de errores. Eliminar 
             <div class="container-main">
                 <div class="main-page">
                     <div class="container-all">
-                        <div class="events">
-                            <div class="title-header title-header-main">
-                                <h1 id="Noticia">Noticias</h1>
-                                <div class="line"></div>
-                                <?php
-                                //Verifica si hay 1 o mas de un registro en la tabla. Si hay filas en la tabla, si hay imprime la informacion en forma de card de noticias. De lo contrario oculta el apartado de noticia en el index.html
-                                if (mysqli_num_rows($resultado) >= 1) {
-                                    echo '
+                            <div class="events">
+                                <div class="title-header--change title-header title-header-main">
+                                    <h1 id="Noticia">Noticias</h1>
+                                    <div class="line"></div>
+                                    <?php
+                                    //Verifica si hay 1 o mas de un registro en la tabla. Si hay filas en la tabla, si hay imprime la informacion en forma de card de noticias. De lo contrario oculta el apartado de noticia en el index.html
+                                    if (mysqli_num_rows($resultado) >= 1) {
+                                        echo '
                                         <script>
                                             try {
-                                                const title-noticia = document.querySelector("#Noticia");
-                                                const no-noticia = document.querySelector("#no-Noticia");
-                                                title-noticia.style.display = "block";
-                                                no-noticia.style.display = "";
+                                                let title_noticia = document.querySelector("#Noticia");
+                                                let no_noticia = document.querySelector("#no-Noticia");
+                                                title_noticia.style.display = "block";
+                                                no_noticia.style.display = "";
                                             } catch (error) {
                                                 
                                             }
                                         </script>
                                     ';
-                                } else {
-                                    echo '
+                                    } else {
+                                        echo '
                                         <script>
                                             try {
                                                 const title = document.querySelector("#Noticia");
@@ -443,28 +443,72 @@ error_reporting(0); //Poner (0) para eliminar los reportes de errores. Eliminar 
                                             }
                                         </script>
                                     ';
-                                }
-                                ?>
+                                    }
+                                    ?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <?php foreach ($resultado as $row) { ?>
-                                <div class="card__img">
-                                    <embed src="./images/notice_img/<?php echo $row['imagen']; ?>" />
+
+                              <div class="noticias__link">
+                                <div>
+                                    <button class="sgl__btn" style="transform: rotate(180deg)" onClick="slide('left')" class="noticias__slider__arrow arrowLeft">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg>
+                                    </button>
+                                    <button class="sgl__btn" onClick="slide('right')" class="noticias__slider__arrow arrowLeft">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg>
+                                    </button>
                                 </div>
-                                <div class="inf-card">
-                                    <div class="card__title">
-                                        <h1>
-                                            <?php echo $row['nombre']; ?>
-                                            </h5>
-                                    </div>
-                                    <div class="card__description">
-                                        <textarea readonly><?php echo $row['descripcion']; ?></textarea>
-                                    </div>
+                                  <a id="notAccess" href="php/noticias.php">Ver todas</a>
                                 </div>
-                            <?php } ?>
+                                
+                              
+                                <div class="content__container">
+                                    <div class="sgl__arrow arrowsContainer">
+                                      <button class="sgl__btn" style="transform: rotate(180deg)" onClick="slide('left')" class="noticias__slider__arrow arrowLeft">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg>
+                                      </button>
+                                    </div>
+                                <div class="sld_btn_container">
+                                  <div class="noticias__slider grid">
+                                    <div class="card__container">
+                                        <?php foreach ($resultado as $row) { ?>
+                                            <div class="singleCard">
+                                      
+                                              <div class="card__img">
+                                                <embed draggable="false" src="./images/notice_img/<?php echo $row['imagen']; ?>" />
+                                              </div>
+                                    
+                                              <div class="inf-card">
+                                                <div class="card__title">
+                                                    <h1>
+                                                        <?php echo $row['nombre']; ?>
+                                                    </h1>
+                                                </div>
+                                                <div class="card__description">
+                                                    <p readonly><?php echo $row['descripcion']; ?></p>
+                                                </div>
+                                              </div>
+                                  
+                                              <div class="card__subtitle">
+                                                <p>Publicada por <?php echo $row['autor']; ?> - <?php echo date("d/m/Y", strtotime($row['fecha'])); ?></p>
+                                              </div>
+
+                                          </div>
+                                        <?php } ?>
+                                    </div>
+                                  </div>
+
+                                  <div class="slider-buttons">
+
+                                  </div>
+                                </div>
+                                    <div class="sgl__arrow arrowsContainer">
+                                      <button class="sgl__btn" onClick="slide('right')" class="noticias__slider__arrow arrowRight">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg>
+                                      </button>                                      
+                                    </div>
+                              </div>
+
                         </div>
-                    </div>
                 </div>
             </div>
         </main>
@@ -570,6 +614,7 @@ error_reporting(0); //Poner (0) para eliminar los reportes de errores. Eliminar 
     </script>
     <script src="./JS/burger-bar.js"></script>
     <script src="./JS/sliderMovement.js"></script>
+    <script src="./JS/events-slider.js"></script>
 </body>
 
 </html>

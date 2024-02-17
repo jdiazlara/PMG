@@ -165,7 +165,7 @@ error_reporting(0);
     die();
   } else {
     if (isset($_SESSION['user_email_address'])) {
-      if ($_SESSION['user_email_address'] == "alexandergomez41005@gmail.com" || $_SESSION['user_email_address'] == "pmaximogomez2000@gmail.com") {
+      if ($_SESSION['user_email_address'] == "alexandergomez41005@gmail.com" || $_SESSION['user_email_address'] == "pmaximogomez2000@gmail.com" || $_SESSION['user_email_address'] == "analuisaarias33@gmail.com") {
 
       } else {
         echo '<div class="no_access">
@@ -206,7 +206,7 @@ error_reporting(0);
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <?php session_unset();
+            <?php 
           } ?>
           <input type="submit" value="Guardar" class="btn btn-primary" name="Guardar">
         </form>

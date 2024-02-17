@@ -1,141 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.text-primary{
-    color: #176dcf;
+.text-primary {
+  color: #176dcf;
 }
 
-.container{
-    margin: 20px;
-    height: 280px;
-    display: flex;
-    justify-content: center;
+.container {
+  margin: 20px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
 }
 
-.col-lg-4{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-flow: column nowrap;
+.col-lg-4 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-flow: column nowrap;
 }
 
-.form-group{
-    display: flex;
-    justify-content: left;
-    flex-flow: column nowrap;
-    width: 700px;
+.form-group {
+  display: flex;
+  justify-content: left;
+  flex-flow: column nowrap;
+  width: 700px;
 }
 
-.select-file{
-    width: 400px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    border: none !important;
-    border-radius: 0px !important;
+.select-file {
+  width: 400px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: none !important;
+  border-radius: 0px !important;
 }
 
-#form-group__label-file{
-    padding-block: 10px;
-    font-size: 18px;
+#form-group__label-file {
+  padding-block: 10px;
+  font-size: 18px;
 }
 
-#my-input{
-    border-radius: 3px;
-    border: 1px solid rgb(187, 187, 187);
-    padding: 5px;
-    outline: none;
+#my-input {
+  border-radius: 3px;
+  border: 1px solid rgb(187, 187, 187);
+  padding: 5px;
+  outline: none;
 }
 
-#form-group__label-desc{
-    margin-top: 10px;
+#form-group__label-desc {
+  margin-top: 10px;
 }
 
-.btn{
-    width: 150px;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 3px;
-    background-color: #249cf2;
-    color: white;
-    font-size: 20px;
-    border: none;
-    outline: none;
-    font-weight: 700;
+.btn {
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: #249cf2;
+  color: white;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  font-weight: 700;
 }
 
-textarea{
-    resize: vertical;
-    max-height:200px;
-    min-height: 50px;
+textarea {
+  resize: vertical;
+  max-height: 200px;
+  min-height: 50px;
 }
 
-.main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:80px;
-    flex-flow: column nowrap;
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  flex-flow: column nowrap;
 }
 
-table{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-    margin-bottom:100px !important;
+table {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 100px !important;
 }
 
-.thead{
-    background-color: rgba(0, 132, 255, 0.452);
+.thead {
+  background-color: rgba(0, 132, 255, 0.452);
 }
 
-th{
-    padding: 5px;
-    color: black;
-    border-radius: 2px;
+th {
+  padding: 5px;
+  color: black;
+  border-radius: 2px;
 }
 
 
-td{
-    border-bottom: 1px solid black;  
-    border-right: 1px solid black;
-    padding-block: 5px;
-    padding-inline:10px;
-    box-sizing: border-box;
-    text-align: left;
+td {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding-block: 5px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
-#email{
-    text-align: left !important;
+#email {
+  text-align: left !important;
 }
 
-#id{
-    color: black;
-    font-weight: 700;
-    font-size: 18px;
+#id {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 /*resize*/
 
-.no_session{
-    text-align: center;
-    font-size: 30px;
-    font-family: "Poppins";
-    font-weight: 700;
-    color: rgb(37, 37, 37);
-    margin-top: 60px;
+.no_session {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 700;
+  color: rgb(37, 37, 37);
+  margin-top: 60px;
 
 }
 
-.no_access{
-    text-align: center;
-    font-size: 30px;
-    font-family: "Poppins";
-    font-weight: 700;
-    color: rgb(37, 37, 37);
-    margin-top: 60px;
+.no_access {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 700;
+  color: rgb(37, 37, 37);
+  margin-top: 60px;
 
 }
 
-#init_session{
-    display: block;
-    text-align: center;
+#init_session {
+  display: block;
+  text-align: center;
 }

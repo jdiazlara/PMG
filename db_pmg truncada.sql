@@ -51,7 +51,10 @@ CREATE TABLE `noticias` (
   `cod_imagen` int(11) NOT NULL,
   `imagen` varchar(255) NOT NULL,
   `nombre` varchar(100) NOT NULL,
-  `descripcion` text NOT NULL
+  `descripcion` text NOT NULL,
+  `fecha` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+  `autor` text NOT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
