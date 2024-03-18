@@ -31,6 +31,8 @@ if (mysqli_num_rows($resultado) == 0) {
 
   $_SESSION['mensaje'] = 'Inicio de sesión efectuado correctamente';
   $_SESSION['tipo'] = 'success';
+
+  header("location:" . "./solicitud_de_Admision.php");
 }
 
 ?>

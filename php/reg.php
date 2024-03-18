@@ -51,15 +51,15 @@
       $mail->SMTPDebug = 0;  // 0 para no mostrar mensajes de depuración, 2 para monstar
       $mail->Host = 'smtp.gmail.com';
       $mail->SMTPAuth = true;
-      $mail->Username = 'analuisaarias33@gmail.com'; // la direccion de correo electrónico de Gmail
-      $mail->Password = 'vgjy fbvp rvgm vcse'; // 'rnzocuypkiowfmgq'; // La contraseña de la cuenta Gmail
+      $mail->Username = 'pmaximogomez2000@gmail.com'; // la direccion de correo electrónico de Gmail
+      $mail->Password = 'kstv tdql pcgf rhlo'; // 'rnzocuypkiowfmgq'; // La contraseña de la cuenta Gmail
       $mail->SMTPSecure = "tls";
       $mail->Port = 587; // El puerto SMTP de Gmail
 
       //Configurar el remitente y el destinatario
       
       // $mail->setFrom('alexandergomez41005@gmail.com', 'Politécnico Máximo Gómez');
-      $mail->setFrom('analuisaarias33@gmail.com', 'Politécnico Máximo Gómez');
+      $mail->setFrom('pmaximogomez2000@gmail.com', 'Politécnico Máximo Gómez');
       $mail->addAddress($correo, $nombre);
 
       //Configurar el asunto y el cuerpo del correo
