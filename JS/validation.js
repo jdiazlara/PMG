@@ -145,7 +145,7 @@ function putEvents($inputs, schema) {
 
     // 4
     if ($input.id == "contraseña") {
-       document.addEventListener("input", () => {
+       $input.addEventListener("input", () => {
          ValidateInput(document.getElementById("confirmacion"), schema["confirmacion"][0])
        })
     }
