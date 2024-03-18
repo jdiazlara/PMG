@@ -1,0 +1,113 @@
+/* #formulario {
+    position: absolute;
+    top: 300px;
+    left: 550px;
+} */
+
+/* #titulo {
+    position: absolute;
+    top: 300px;
+    left: 250px;
+} */
+
+#nota {
+    /* font-size: 20px; */
+    margin-bottom: 1rem;
+    color: gray;
+    /* position: absolute;
+    top: 450px;
+    margin-top: 150px;
+    margin-left: 20px; */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"] {
+    /* position: absolute;
+    top: 80px;
+    left: -300px; */
+    /* height: 30px;
+    width: 625px; */
+}
+
+input[type="file"] {
+    /* margin-top: 30px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 80px;
+    left: 100px; */
+    /* height: 30px;
+    width: 625px; */
+}
+
+#select {
+    /* position: absolute;
+    top: 80px;
+    left: -300px; */
+    /* height: 30px;
+    width: 625px; */
+}
+
+button {
+    height: 25px;
+    width: 100px;
+    color: white;
+    border-color: #093d7e;
+    background-color: #093d7e;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+/* #continuar {
+    position: absolute;
+    top: 165px;
+    left: 235px;
+}
+
+#atras {
+    position: absolute;
+    top: 165px;
+    left: 125px;
+} */
+
+.label {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.wg-input-radio {
+    width: 100px !important;
+}
+
+/* .ListaDeResultados {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    height: 30px;
+    width: 625px;
+} */
+
+.EnviarBtn,
+.CancelarBtn {
+    margin-top: 25px;
+    margin-left: 150px;
+    height: 25px;
+    width: 150px;
+    color: white;
+    border-color: #093d7e;
+    background-color: #093d7e;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.CancelarBtn {
+    margin-left: 20px;
+}

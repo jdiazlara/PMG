@@ -5,6 +5,10 @@ main {
   width: 100% !important;
 }
 
+img {
+  width: 100%;
+}
+
 .all {
   align-items: center;
   justify-content: center;
@@ -256,7 +260,7 @@ textarea {
 }
 
 .singleCard {
-  user-select: none;
+  -webkit-user-select: none;
   width: 350px;
   max-width: 350px;
   min-height: 450px;
@@ -345,7 +349,7 @@ textarea {
   font-weight: 600;
   font-family: monospace;
   transition: color 0.3s;
-  user-select: none;
+  -webkit-user-select: none;
 }
 
 .noticias__slider__arrow:hover {
