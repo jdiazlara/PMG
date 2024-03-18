@@ -2,7 +2,6 @@ const short_menu = document.querySelector(".container-short_menu");
 const button = document.querySelector(".bar");
 const main = document.querySelector(".all");
 
-
 button.addEventListener("click", show_menu);
 main.addEventListener("click", hidden_menu );
 

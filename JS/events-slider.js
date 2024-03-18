@@ -242,71 +242,70 @@ function numeroMasCercano(numero, array) {
   return array.reduce((anterior, actual) => Math.abs(actual - numero) < Math.abs(anterior - numero) ? actual : anterior);
 }
 
-function SwipeDeviceSelect (device) {
-  var esDispositivoMovil = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-    if (!esDispositivoMovil) {
-      Swipe("mousedown", "mousemove", "mouseup")
-    }
-    else {
-      Swipe("touchstart", "touchmove", "touchend")
-    }
+function SwipeDeviceSelect() {
+  Swipe()
 }
 SwipeDeviceSelect()
 
-function Swipe (start, over, up, device) {
-  window.addEventListener(over, function (event) {
-    const clientX = device == "pc" ? event.clientX : event.touches[0].clientX
 
-    if (!clicking || slider.children.length <= 1 || getInView() >= slider.children.length) return
-    console.log("moving")
+function Swipe() {
+  const array = [["mousedown", "mousemove", "mouseup"], ["touchstart", "touchmove", "touchend", "movil"]]
 
-    const jump = slider.children[1].getBoundingClientRect().x - slider.children[0].getBoundingClientRect().x;
-    let distance = (clientX - prevMousePosition)
+  for (let i = 0; i < array.length; i++) {
+    const start = array[i][0];
+    const over = array[i][1];
+    const up = array[i][2];
+    const device = ["pc","movil"][i]
 
-    const lastJump = Math.trunc((jump * (-1) * (slider.children.length - getInView())))
+    window.addEventListener(over, function (event) {
 
-    if (sliderButtons[0].classList.contains("active") && distance > 0) {
-      distance = 0
-      prevMousePosition = clientX
-    } else if (sliderButtons[sliderButtons.length - 1].classList.contains("active") && distance < 0) {
-      distance = 0
-      prevMousePosition = clientX
-    }
+      if (!clicking || slider.children.length <= 1 || getInView() >= slider.children.length) return
+      const clientX = (device == "pc") ? event.clientX : event.touches[0].clientX
 
-    slider.style.marginLeft = distance + actualPosition + "px";
-  });
+      const jump = slider.children[1].getBoundingClientRect().x - slider.children[0].getBoundingClientRect().x;
+      let distance = (clientX - prevMousePosition)
 
-  window.addEventListener(up, function (event) {
+      const lastJump = Math.trunc((jump * (-1) * (slider.children.length - getInView())))
 
-    if (clicking) clicking = false
+      if (sliderButtons[0].classList.contains("active") && distance > 0) {
+        distance = 0
+        prevMousePosition = clientX
+      } else if (sliderButtons[sliderButtons.length - 1].classList.contains("active") && distance < 0) {
+        distance = 0
+        prevMousePosition = clientX
+      }
 
-    // Lista de posiciones de las tarjetas
-    const jump = slider.children[1].getBoundingClientRect().x - slider.children[0].getBoundingClientRect().x;
-    const arr = Array.from({ length: slider.children.length - getInView() + 1 }, (_, i) => jump * i * -1)
-
-    // Posicionar el slider en la posicion mas cercana
-    const position = numeroMasCercano(parseFloat(slider.style.marginLeft.split("px")[0]), arr)
-    slider.style.transition = 'margin-left 0.3s'
-    sliderButtons[arr.indexOf(position)].click()
-  });
-
-  // Cada elemento entra o sale del click
-  for (let i = 0; i < slider.children.length; i++) {
-    const sld = slider.children[i];
-
-    sld.addEventListener(start, function (event) {
-      const clientX = device == "pc" ? event.clientX : event.touches[0].clientX
-
-      clicking = true
-      prevMousePosition = clientX
-      actualPosition = getPosition()
-
-      slider.style.transition = 'none'
+      slider.style.marginLeft = distance + actualPosition + "px";
     });
+
+    window.addEventListener(up, function (event) {
+
+      if (clicking) clicking = false
+
+      // Lista de posiciones de las tarjetas
+      const jump = slider.children[1].getBoundingClientRect().x - slider.children[0].getBoundingClientRect().x;
+      const arr = Array.from({ length: slider.children.length - getInView() + 1 }, (_, i) => jump * i * -1)
+
+      // Posicionar el slider en la posicion mas cercana
+      const position = numeroMasCercano(parseFloat(slider.style.marginLeft.split("px")[0]), arr)
+      slider.style.transition = 'margin-left 0.3s'
+      sliderButtons[arr.indexOf(position)].click()
+    });
+
+    // Cada elemento entra o sale del click
+    for (let i = 0; i < slider.children.length; i++) {
+      const sld = slider.children[i];
+
+      sld.addEventListener(start, function (event) {
+        const clientX = (device == "pc") ? event.clientX : event.touches[0].clientX
+
+        clicking = true
+        prevMousePosition = clientX
+        actualPosition = getPosition()
+
+        slider.style.transition = 'none'
+      });
+    }
   }
-
-
-
 }
 

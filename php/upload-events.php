@@ -110,7 +110,7 @@ error_reporting(0);
           </a>
         </li>
         <li class="li">
-          <a href="../php/login_google.php">
+          <a href="../php/login.php">
             <div>
               <span class="icon-profile">
                 <?php
@@ -138,7 +138,7 @@ error_reporting(0);
   </header>
   <div class="container-short_menu">
     <ul>
-      <li class="li li_icon-profile"><a href="../php/login_google.php">
+      <li class="li li_icon-profile"><a href="../php/login.php">
           <div><span class="icon-profile">
               <?php if ($_SESSION['user_image'] == '') {
                 echo '<script> document.write("Iniciar Sesión"); </script>';
@@ -165,7 +165,7 @@ error_reporting(0);
     die();
   } else {
     if (isset($_SESSION['user_email_address'])) {
-      if ($_SESSION['user_email_address'] == "alexandergomez41005@gmail.com" || $_SESSION['user_email_address'] == "pmaximogomez2000@gmail.com" || $_SESSION['user_email_address'] == "analuisaarias33@gmail.com") {
+      if ($_SESSION['user_email_address'] == "alexandergomez41005@gmail.com" || $_SESSION['user_email_address'] == "pmaximogomez2000@gmail.com" || $_SESSION['user_email_address'] == "RATAk1@gmail.com") {
 
       } else {
         echo '<div class="no_access">

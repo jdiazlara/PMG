@@ -1,0 +1,26 @@
+#alertParent {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#alertParent strong {
+  color: white;
+}
+
+#alertParent button {
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  scale: 2;
+}
+
+.alert-success {
+  background-color: #20ff00 !important;
+}

@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column nowrap;
+body {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* justify-content: center; */
+  flex-flow: column nowrap;
 }
 
+/* 
 .container-session{
     display: flex;
     align-items: center;
@@ -69,62 +71,212 @@ body{
     font-size: 14px;
     height: 36px;
     width: 120px;
+  } */
+
+@media (max-width:425px) {
+  .container-session {
+    padding: 20px;
+    box-sizing: border-box;
   }
 
+  .login-container h2 {
+    font-size: 22px;
+  }
 
+  .profile img {
+    width: 70px;
+    height: 70px !important;
+    border-radius: 60%;
+    margin-top: 40px;
 
-@media (max-width:425px){
-    .container-session{
-        padding: 40px;
-        box-sizing: border-box;
-    }
+  }
 
-    .profile img{
-        width: 70px;
-        height: 70px !important;
-        border-radius: 60%;
-        margin-top: 40px;
-        
-    }
+  .profile h3 {
+    font-size: 14px;
+    color: rgb(24, 24, 24);
+    font-weight: 600;
+  }
 
-    .profile h3{
-        font-size: 14px;
-        color: rgb(24, 24, 24);
-        font-weight: 600;
-    }
+  #logout {
+    color: rgb(5, 39, 133);
+    text-decoration: underline;
+    position: relative;
+    top: 15px;
+  }
 
-    #logout{
-        color: rgb(5, 39, 133);
-        text-decoration: underline;
-        position: relative;
-        top: 15px;
-    }
+  .card-header {
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+  }
 
-    .card-header{
-        text-align: center;
-        font-family: "Poppins";
-        font-weight: 700;
-        font-size: 24px;
-        color: rgb(34, 34, 34);
-    }
-
-    .container-short_menu{
-        background-color: #072d5c;
-        position:absolute;
-        right: 0px;
-        top: 140px;
-        height: 100%;
-        width: 250px;
-        z-index: 50;
-        color: black;
-        box-sizing: border-box;
-        padding: 20px;
-    }
+  .container-short_menu {
+    background-color: #072d5c;
+    position: absolute;
+    right: 0px;
+    top: 140px;
+    height: 100%;
+    width: 250px;
+    z-index: 50;
+    color: black;
+    box-sizing: border-box;
+    padding: 20px;
+  }
 }
 
-@media (max-width:320px){
-    .container-session{
-        padding: 10px;
-        box-sizing: border-box;
-    }
+
+/* ---------- */
+#login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.all {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  max-width: 400px;
+  width: calc(100% - 120px);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #093d7e;
+  font-size: 25px;
+}
+
+.login-container>p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  margin-top: 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: #093d7e;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  font-size: 15px;
+}
+
+
+.login-container button:hover {
+  background-color: #115fbe;
+}
+
+.login-container .register-link {
+  text-align: center;
+  color: #093d7e;
+  margin-top: 10px;
+}
+
+.login-container .register-link a {
+  color: #093d7e;
+  text-decoration: none;
+}
+
+/* Perfil */
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details {
+  flex-grow: 1;
+}
+
+.profile-info {
+  margin-bottom: 10px;
+}
+
+.profile-info label {
+  font-weight: bold;
+  color: #093d7e;
+  margin-right: 5px;
+}
+
+.profile-info p {
+  margin: 0;
+  color: #666;
+}
+
+.logout-link {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 7px;
+  background: red;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.logout-link:hover {
+  opacity: .8;
+}
+
+.profile-section>h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #093d7e;
+}
+
+.profile-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #093d7e;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.37);
+}
+
+.PassEyes {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateX(-150%) translateY(-50%);
+  cursor: pointer;
+  opacity: .6;
 }

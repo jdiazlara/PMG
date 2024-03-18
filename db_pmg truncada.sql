@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-01-2024 a las 21:27:56
+-- Tiempo de generación: 03-03-2024 a las 14:07:35
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -44,6 +44,20 @@ CREATE TABLE `admision` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `login`
+--
+
+CREATE TABLE `login` (
+  `id_usuario` text NOT NULL,
+  `correo` text NOT NULL,
+  `contraseña` text NOT NULL,
+  `hash_` varchar(32) DEFAULT NULL,
+  `activo` int(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `noticias`
 --
 
@@ -52,10 +66,23 @@ CREATE TABLE `noticias` (
   `imagen` varchar(255) NOT NULL,
   `nombre` varchar(100) NOT NULL,
   `descripcion` text NOT NULL,
-  `fecha` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-  `autor` text NOT NULL
-
+  `autor` text NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `registro`
+--
+
+CREATE TABLE `registro` (
+  `id_usuario` text NOT NULL,
+  `user_image` text NOT NULL,
+  `nombre_tutor` text NOT NULL,
+  `apellido_tutor` text NOT NULL,
+  `documento_identidad` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -109,10 +136,24 @@ ALTER TABLE `admision`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `login`
+--
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`id_usuario`(32)),
+  ADD UNIQUE KEY `correo` (`correo`) USING HASH;
+
+--
 -- Indices de la tabla `noticias`
 --
 ALTER TABLE `noticias`
   ADD PRIMARY KEY (`cod_imagen`);
+
+--
+-- Indices de la tabla `registro`
+--
+ALTER TABLE `registro`
+  ADD PRIMARY KEY (`id_usuario`(32)),
+  ADD UNIQUE KEY `documento_identidad` (`documento_identidad`) USING HASH;
 
 --
 -- Indices de la tabla `slider1`
@@ -140,7 +181,7 @@ ALTER TABLE `admision`
 -- AUTO_INCREMENT de la tabla `noticias`
 --
 ALTER TABLE `noticias`
-  MODIFY `cod_imagen` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_imagen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `slider1`

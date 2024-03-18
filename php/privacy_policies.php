@@ -106,7 +106,7 @@
                     </a>
                 </li>
                 <li class="li li_icon-profile">
-                    <a href="../php/login_google.php">
+                    <a href="../php/login.php">
                         <div>
                             <span class="icon-profile">
                                 <?php
@@ -134,7 +134,7 @@
     </header>
     <div class="container-short_menu">
         <ul>
-            <li class="li li_icon-profile"><a href="../php/login_google.php"><div><span class="icon-profile"> <?php if ($_SESSION['user_image'] == '') { echo '<script> document.write("Iniciar Sesión"); </script>';} else { echo '<img src="' . $_SESSION['user_image'] . '" class="rounded-circle container" alt="">';} ?></span></div></a></li>
+            <li class="li li_icon-profile"><a href="../php/login.php"><div><span class="icon-profile"> <?php if ($_SESSION['user_image'] == '') { echo '<script> document.write("Iniciar Sesión"); </script>';} else { echo '<img src="' . $_SESSION['user_image'] . '" class="rounded-circle container" alt="">';} ?></span></div></a></li>
             <li><span class="material-icons-outlined"><img src="../images/home.png" alt=""></span><a href="../index.php">Inicio</a></li>
             <li><span><img src="../images/sobreNosotros.png" alt=""></span><a href="../php/about_us.php">Sobre Nosotros</a></li>
             <li><span><img src="../images/docentes.png" alt=""></span><a href="../php/Docentes.php">Docentes</a></li>

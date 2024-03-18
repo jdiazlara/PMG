@@ -123,7 +123,7 @@ error_reporting(0);
                     }
                 ?>
                 <li class="li li_icon-profile">
-                    <a href="../php/login_google.php">
+                    <a href="../php/login.php">
                         <div>
                             <span class="icon-profile">
                                 <?php
@@ -151,7 +151,7 @@ error_reporting(0);
     </header>
     <div class="container-short_menu">
         <ul>
-            <li class="li li_icon-profile"><a href="../php/login_google.php">
+            <li class="li li_icon-profile"><a href="../php/login.php">
                     <div><span class="icon-profile">
                             <?php if ($_SESSION['user_image'] == '') {
                                 echo '<script> document.write("Iniciar Sesión"); </script>';

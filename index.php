@@ -143,7 +143,7 @@ error_reporting(0); //Poner (0) para eliminar los reportes de errores. Eliminar 
                 }
                 ?>
                 <li class="li li_icon-profile">
-                    <a href="./php/login_google.php">
+                    <a href="./php/login.php">
                         <div>
                             <span class="icon-profile">
                                 <?php
@@ -172,7 +172,7 @@ error_reporting(0); //Poner (0) para eliminar los reportes de errores. Eliminar 
     <div class="container-short_menu">
         <ul>
             <li class="li li_icon-profile">
-                <a href="./php/login_google.php">
+                <a href="./php/login.php">
                     <div>
                         <span class="icon-profile">
                             <?php
@@ -203,7 +203,7 @@ error_reporting(0); //Poner (0) para eliminar los reportes de errores. Eliminar 
         const userInfoData = JSON.parse(localStorage.getItem('userInfo'));
         const userImgs = document.querySelectorAll('.userImg');
         userImgs.forEach((userImg) => {
-            userImg.src = userInfoData[2];
+            userImg.src = userInfoData[2].substring(1);
         })
     </script>
 

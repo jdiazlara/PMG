@@ -1,0 +1,74 @@
+.input__box {
+  position: relative;
+}
+
+
+
+.input__box+.input__box {
+  margin-top: 5px;
+}
+
+.input__box label {
+  pointer-events: none;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 15px;
+  padding: 3px;
+  padding-bottom: 0px;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: rgb(112, 112, 112);
+  transition: all .2s;
+}
+
+.input__error {
+  color: red;
+  font-size: 13px;
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  margin-top: 2px;
+}
+
+.input__error>svg {
+  transform: translateY(2px);
+}
+
+.input__box input:focus+label {
+  top: 0;
+  font-size: 13px;
+  left: 10px;
+  color: #093d7e;
+  font-weight: 500;
+}
+
+.input__label--active {
+  top: 0 !important;
+  font-size: 13px !important;
+  left: 10px !important;
+  color: #093d7e !important;
+  font-weight: 500 !important;
+}
+
+.login-container input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.flex .preview {
+  border-radius: 50%;
+  height: 100%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
